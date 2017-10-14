@@ -1,0 +1,43 @@
+mixin b-footer()
+	+b.footer
+		.container
+			+b(class="column _1")
+				+e.item_1
+					+b-logo()
+				+e.item_2
+					+e.item_name= footer.col_1.name
+					+e.item_value= footer.col_1.value
+				+e.item_3
+					+e.A(href= footer.col_1.link_1).link_docs
+						SPAN.glyphicon.glyphicon-envelope
+					+e.A(href= footer.col_1.link_2).link_mail
+						SPAN.glyphicon.glyphicon-cloud-download
+
+			+b(class="column _2")
+				+e.title= footer.col_2.title
+				each item in footer.col_2.cert
+					+e.item.gallery
+						+e.item_name= item.name
+						+e.item_value 
+							+e.A(href= item.link).link= item.value
+
+			+b(class="column _3")
+				+e.title= footer.col_3.title
+
+				each item in footer.col_3.contacts
+					if item.link
+						+e.item
+							+e.item_name= item.name
+							+e.item_value 
+								+e.A.link(href= item.link)= item.value
+					else
+						+e.item
+							+e.item_name= item.name
+							+e.item_value= item.value
+
+			+b(class="column _4")
+				+e.title= footer.col_4.title
+				+e.item
+					each item in footer.col_4.mail
+						+e.item_value
+							+e.A.link(href= item.link)= item.value

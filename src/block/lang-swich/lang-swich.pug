@@ -1,0 +1,6 @@
+mixin b-lang-swich(items)
+	+b.UL.lang-swich
+		each item in items
+			+e.LI.item(class="_"+item.country)
+				+e.A.link(href=item.link, class="_"+item.country, data-lang=item.country)
+					+e.IMG(src='/img/icon/'+ item.country +'.png')

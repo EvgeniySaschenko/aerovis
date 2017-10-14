@@ -1,0 +1,7 @@
+mixin b-brief(items, classes)
+	+b.brief(class=classes)
+		each item in items
+			+e.item
+				+e.name!= item.name
+				+e.content!= item.content
+				+e.date!= item.date

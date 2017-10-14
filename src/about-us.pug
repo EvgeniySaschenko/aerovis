@@ -1,0 +1,24 @@
+extends layouts/root
+
+block title 
+	title= general.home.title
+
+block main
+	+b.about
+		+b.title-page= general.home.name
+		.container
+			+e.logo
+				+b-logo()
+
+			+b-text-paragraph(about.textAboutUs, 'description')
+
+			+b-slider(about.slider, '_about')
+
+			+b.H3.title-block._accreditation= about.title1
+			+b-tile(about.accreditation, '_accreditation')
+
+			+b.H3.title-block._partner= about.title2
+			+b-tile(about.partner, '_partner')
+
+			+b.H3.title-block._certificate= about.title3
+			+b-gallery(about.certificate, '_certificate')

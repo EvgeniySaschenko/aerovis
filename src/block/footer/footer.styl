@@ -1,0 +1,57 @@
+.footer
+	font-size 0
+	background colorCorpDark
+	padding 25px 0
+	line-height 2
+	color #fff
+	.logo
+		padding-top 10px
+		height 45px
+	.column
+		border 0
+		font-size 16px
+		width 25%
+		display inline-block
+		vertical-align top
+		&__title
+			font-weight bold
+			font-size 20px
+			padding-bottom 5px
+		&__item	
+			&_name
+				font-weight bold
+				display inline
+				padding-right 5px
+			&_value
+				font-family Geneva, Arial, Helvetica, sans-serif
+				display inline
+				font-size 16px
+		&__link
+				color #fff
+				padding-right 10px
+		&__link:hover
+				text-decoration none
+				
+		&_1
+			line-height 1.6
+			.column__item	
+				&_value
+					display block
+		&_4
+			line-height 1.6
+			.column__item	
+				&_value
+					display block
+			
+@media tablet
+	.footer
+		.column 
+			&_1
+				width 100%
+				text-align center
+			&_2
+				display none
+			&_3
+				display none
+			&_4
+				display none

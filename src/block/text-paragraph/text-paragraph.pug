@@ -1,0 +1,4 @@
+mixin b-text-paragraph(items, classes)
+	+b(class=classes)
+		each item in items
+			+e.P.item= item.text

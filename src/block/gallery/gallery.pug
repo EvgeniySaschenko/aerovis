@@ -1,0 +1,9 @@
+mixin b-gallery(items, classes)
+	+b.gallery(class=classes)
+		each item in items
+			+e.item
+				if item.src
+					+e.link(href=item.href, rel="group")
+						+e.img(src=item.src, alt="img")
+						if item.text
+							+e.text!= item.text

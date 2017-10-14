@@ -1,0 +1,39 @@
+include  ../block/index
+include ../../node_modules/bemto.pug/bemto
+
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, user-scalable=yes")
+		link(rel="shortcut icon" href="/img/icon.ico" type="image/ico")
+
+		block title
+
+	body
+		.wrap
+			+b-header()
+			main.main#content
+				block main
+
+			+b-footer()
+
+		link(rel="stylesheet" href="/vendor/flickity/flickity.css")
+		link(rel="stylesheet" href="/vendor/fancybox/jquery.fancybox.css")
+		link(rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css")
+		link(rel="stylesheet" href="/vendor/flags/flags.css")
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+		link(rel="stylesheet" href="/vendor/slick/slick.css")
+		link(rel="stylesheet" href="/vendor/slick/slick-theme.css")
+		link(rel="stylesheet" href="/css/aerovis.css")
+		<!--[if IE 7]>
+		link(rel="stylesheet" href="/css/ie7.css")
+		<![endif]-->
+		script(type="text/javascript" src="/vendor/jquery/jquery-1.9.1.min.js")
+		script(type="text/javascript" src="/vendor/jquery.html5-placeholder-shim.js")
+		script(type="text/javascript" src="/vendor/html5shiv.min.js")
+		script(type="text/javascript" src="/vendor/flickity/flickity.pkgd.min.js")
+		script(type="text/javascript" src="/vendor/fancybox/jquery.fancybox.pack.js")
+		script(type="text/javascript" src="/vendor/flags/flags.js")
+		script(type="text/javascript" src="/vendor/slick/slick.min.js")
+		script(type="text/javascript" src="/js/main.js")

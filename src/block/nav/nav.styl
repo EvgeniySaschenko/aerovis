@@ -1,0 +1,56 @@
+.nav
+	display inline-block
+	&__item
+		display inline-block
+
+.header
+	.nav
+		line-height 53px
+		&__link
+			font-family OpenSansBold
+			font-size 20px
+			color #fff
+			text-decoration none
+			padding 0 10px
+			color colorCorpViolet
+		&__link:hover
+			color colorCorpVioletHover
+		&__link.active
+			color colorCorpVioletHover
+			text-decoration underline
+		.toggler
+			width 40px
+			cursor pointer
+			display inline-block
+			display none
+			&__line
+				border-bottom 2px solid colorCorpRed
+				padding-top 10px
+		
+@media tablet
+	.header
+		.nav
+			float right
+			position relative
+			padding-left 10px
+			&__list
+				display none
+			.toggler
+				display inline-block
+				float right
+		.nav.active 
+			.nav__list
+				top 40px
+				display block
+				position absolute
+				right 0
+				z-index 10000
+				background colorCorpDark
+				width 100%
+				background-color: rgba(0, 0, 0, 0.5)
+				text-align center
+			.nav__item
+				display block
+				border-bottom 1px solid colorCorpViolet
+			.nav__link
+				color #fff

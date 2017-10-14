@@ -1,0 +1,21 @@
+mixin b-form-charter-fligts(items, listContry)
+	+b.FORM(name='charter-fligts').form-charter-fligts
+		+b.notice_success= items.noticeMsgSuccess
+		+b.notice_error= items.noticeMsgError
+		+b.notice_help= items.noticeMsgHelp
+		+e.input-wrap
+			+e.INPUT(name="name_user", placeholder= items.name_user, required="required").input_name
+		+e.input-wrap
+			+e.INPUT(name="mail", placeholder= items.mail, required="required").input_mail
+		+e.select-wrap
+			+e.title= items.titleSlectContry
+			+e.select_region
+				each item, i in listContry
+					.form-charter-fligts__select_region__item(data-name= item.name)
+						INPUT(type="hidden", value= item.name)
+						I.form-charter-fligts__select_region__icon(class="icon-flag icon-flag-" + item.alpha2)
+						SPAN.form-charter-fligts__select_region__name= item.name
+		+e.textarea-wrap
+			+e.TEXTAREA(name="message", placeholder= items.message, required="required").textarea_message
+		+e.button-wrap
+			+e.BUTTON.button_send= items.btnSend

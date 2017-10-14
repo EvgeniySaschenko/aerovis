@@ -1,0 +1,10 @@
+mixin b-nav(items, classes)
+	+b.nav(class=classes data-toggle='nav'+classes)
+		+b.toggler.toggler-nav(class=classesNav)
+			+e.line
+			+e.line
+			+e.line
+		+e.UL.list
+			each item in items
+				+e.item
+					+e.link(href=item.link, data-page=item.link) #{item.name}

@@ -1,0 +1,7 @@
+mixin b-tile(items, classes)
+	+b.tile(class=classes)
+		each item in items
+			+e.item
+				+e.logo
+					+e.IMG(src=item.src).img
+				+e.name!=item.name 

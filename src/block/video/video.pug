@@ -1,0 +1,6 @@
+mixin b-video(items, classes)
+	+b.UL.video(class=classes)
+		each item in items
+			+e.LI.item
+				if item.src
+					+e.IFRAME.video(src=item.src, allowfullscreen)

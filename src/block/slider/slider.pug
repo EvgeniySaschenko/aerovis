@@ -1,0 +1,8 @@
+mixin b-slider(items, classes)
+	+b.UL.slider(class=classes)
+		each item in items
+			+e.LI.item
+				if item.imgSrc
+					+e.IMG(src=item.imgSrc).img
+				if item.videoSrc
+					+e.IFRAME(src=item.videoSrc, allowfullscreen).video

@@ -1,0 +1,73 @@
+@font-face
+	font-family OpenSans
+	src url(./../font/open-sans/OpenSans-Regular.ttf)
+
+@font-face
+	font-family OpenSansBold
+	src url(./../font/open-sans/OpenSans-Bold.ttf)
+
+@font-face
+	font-family PTSansBold
+	src url(./../font/pt-sans/PTS75F.ttf)
+	
+@font-face
+	font-family PTSansCaptionBold
+	src url(./../font/pt-sans/PTC75F.ttf)
+
+@font-face
+	font-family PTSans
+	src url(./../font/pt-sans/PTS55F.ttf)
+	
+@font-face
+	font-family PTSansBold-italic
+	src url(./../font/pt-sans/PTS76F.ttf)
+	
+
+body
+	font-family PTSans
+
+.container
+	max-width 1140px
+	margin 0 auto
+	padding 10px
+	
+.title-block
+	text-align center
+	font-size 40px
+	padding 50px 0
+
+.title-page 
+	text-align center
+	font-size 50px
+	padding 20px 0
+	color colorCorpViolet
+	margin-bottom 50px
+
+@media tablet
+	.title-page 
+		font-size 40px
+		margin-bottom 40px
+
+@media phone
+	.title-page 
+		font-size 30px
+		margin-bottom 30px
+
+.notice
+	display none
+	padding 10px 0
+	border-radius 5px
+	&_success
+		color #3c763d
+		background-color #dff0d8
+		border-color #d6e9c6
+	&_error
+		color #a94442
+		background-color #f2dede
+		border-color #ebccd1
+	&_help
+		color #8a6d3b
+		background-color #fcf8e3
+		border-color #faebcc
+.notice.active
+	display block

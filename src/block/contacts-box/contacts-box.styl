@@ -1,0 +1,33 @@
+.contacts-box
+	&__left
+		display inline-block
+	&__map
+		border 5px solid #f2f2f2
+	&__map-iframe
+		width 364px
+		height 213px
+		border 0
+	&__right
+		display inline-block
+		padding 0 20px
+		vertical-align top
+		line-height 1.5
+		font-size 20px
+	&__title
+		font-weight bold
+	&__item
+		&_name
+			font-weight bold
+			display inline-block
+			padding-right 5px
+		&_value
+			display inline-block
+	&__link
+		color #000
+
+@media phone
+	.contacts-box
+		text-align center
+		&__map-iframe
+			width 220px
+			height 130px

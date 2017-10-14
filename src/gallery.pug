@@ -1,0 +1,11 @@
+extends layouts/root
+
+block title 
+	title= general.gallery.title
+
+block main
+	+b.charter-fligts
+		+b.title-page= general.gallery.name
+		.container
+			+b-video(gallery.video, '_gallery')
+			+b-gallery(gallery.photo, '_gallery')

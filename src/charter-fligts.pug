@@ -1,0 +1,13 @@
+extends layouts/root
+
+block title 
+	title= general.charterFligts.title
+
+block main
+	+b.charter-fligts
+		+b.title-page= general.charterFligts.name
+		.container
+			+b-gallery(charterFligts.schemeAircraft, '_scheme-aircraft')
+			+b-form-charter-fligts(charterFligts.form, listContry)
+			+b-table(charterFligts.titleTable, charterFligts.tableContent, '_characteristics-aircraft')
+			+b-gallery(charterFligts.loadingPhoto, '_loading-photo')

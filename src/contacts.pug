@@ -1,0 +1,11 @@
+extends layouts/root
+
+block title 
+	title= general.contacts.title
+
+block main
+	+b.contacts
+		.title-page= general.contacts.name
+		.container
+			+b-contacts-box(contacts.contactsBox)
+			+b-form-contacts(contacts.form)

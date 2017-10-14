@@ -1,0 +1,19 @@
+mixin b-form-contacts(items)
+	+b.FORM(name="contacts").form-contacts
+		+b.notice_success= items.noticeMsgSuccess
+		+b.notice_error= items.noticeMsgError
+		+b.notice_help= items.noticeMsgHelp
+		+e.input-wrap
+			+e.INPUT(name="name_user", placeholder= items.name_user, required="required").input_name
+		+e.input-wrap
+			+e.INPUT(name="mail", placeholder= items.mail, required="required").input_mail
+		//+e.select-wrap
+				+e.title= items.titleSlectRecipient
+				+e.SELECT(name="recipient").select_recipient
+					each item in items.listRecipient
+						+e.OPTION(value= item).option_recipient= item
+
+		+e.textarea-wrap
+			+e.TEXTAREA(name="message", placeholder= items.message, required="required").textarea_message
+		+e.button-wrap
+			+e.BUTTON.button_send= items.btnSend

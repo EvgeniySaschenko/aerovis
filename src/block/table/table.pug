@@ -1,0 +1,12 @@
+mixin b-table(titleTable, items, classes)
+	+b.TABLE.table(class=classes)
+		+e.CAPTION.caption!= titleTable
+		if titleCol
+			+e.THEAD.thead
+				+e.TR.tr
+		+e.TBODY.tbody
+			each row in items
+				if row
+					+e.TR.tr
+						each item in row
+							+e.TD.td!= item

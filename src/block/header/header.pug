@@ -1,0 +1,13 @@
+mixin b-header
+	+b.header
+		+e.top
+			.container
+
+				+b.logo
+					+e.A.link(href='/')
+						+e.IMG.img(src=header.srcLogo)
+				.box_nav-lang
+					+b-nav(header.nav, '_top')
+					+b-lang-swich(header.langSwich)
+		+b-slider(header.slider, '_header')
+		+e.bottom
