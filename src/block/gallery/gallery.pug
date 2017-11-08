@@ -3,7 +3,7 @@ mixin b-gallery(items, classes)
 		each item in items
 			+e.item
 				if item.src
-					+e.link(href=item.href, rel="group")
-						+e.img(src=item.src, alt="img")
-						if item.text
-							+e.text!= item.text
+					if item.text
+						+e.text!= item.text
+					+e.link(href=item.href rel="group")
+						+e.img(src=item.src alt=item.alt)

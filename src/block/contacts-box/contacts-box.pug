@@ -4,29 +4,22 @@ mixin b-contacts-box(items)
 			+e.map
 				+e.IFRAME(src=items.mapSrc).map-iframe
 		+e.right
+
 			+e.title= items.title_1
 			+e.item_address
 				+e.item_name= items.name_1
 				+e.item_value= items.value_1
-			+e.item_phone
-				+e.item_name= items.name_2
-				+e.item_value
-					+e.A.link(href= items.href_2)= items.value_2
-			+e.item_fax
-				+e.item_name= items.name_3
-				+e.item_value
-					+e.A.link(href= items.href_3)= items.value_3
-			+e.item_mail
-				+e.item_name= items.name_4
-			+e.item_mail
-				+e.item_value 
-					+e.A.link(href= items.href_4_1)= items.value_4_1
-			+e.item_mail
-				+e.item_value 
-					+e.A.link(href= items.href_4_2)= items.value_4_2
-			+e.item_mail
-				+e.item_value 
-					+e.A.link(href= items.href_4_3)= items.value_4_3
-			+e.item_mail
-				+e.item_value 
-					+e.A.link(href= items.href_4_4)= items.value_4_4
+
+			each item in items.phones
+				+e.item
+					+e.item_name= item.name
+					+e.item_value
+						+e.A.link(href= item.href)= item.value
+
+
+			+e.item_name= items.title_2
+			each item in items.mails
+				+e.item
+					+e.item_value
+						+e.A.link(href= item.href)= item.value
+

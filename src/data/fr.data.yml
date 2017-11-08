@@ -1,57 +1,57 @@
 general:
   home: 
-    title: 'Авиакомпания Aerovis - О нас'
-    name: О нас
+    title: 'Aerovis Airlines - À propos de nous'
+    name: À propos de nous
   gallery:
-    title: 'Авиакомпания Aerovis - Галерея'
-    name: Галерея
+    title: 'Aerovis Airlines - Galerie'
+    name: Galerie
   contacts:
-    title: 'Авиакомпания Aerovis - Контакты'
-    name: Контакты
+    title: 'Aerovis Airlines - Сontacts'
+    name: Сontacts
   charterFligts:
-    title: 'Авиакомпания Aerovis - Заказ чартера'
-    name: Заказ чартера
+    title: 'Aerovis Airlines - Charte'
+    name: Charte
   certificates:
-    title: 'Авиакомпания Aerovis - Сертификаты'
-    name: 'Сертификаты'
+    title: 'Aerovis Airlines - Certificats'
+    name: 'Certificats'
 
 header: 
   nav:
-    - name : 'О нас'
-      link : '/ru/about-us'
+    - name : 'À propos de nous'
+      link : '/fr/about-us'
 
-    - name : 'Заказ чартера'
-      link : '/ru/charter-fligts'
+    - name : 'Charte'
+      link : '/fr/charter-fligts'
 
-    - name : 'Галерея'
-      link : '/ru/gallery'
+    - name : 'Galerie'
+      link : '/fr/gallery'
 
-    - name : 'Сертификаты'
-      link : '/ru/certificates'
+    - name : 'Certificats'
+      link : '/fr/certificates'
 
-    - name : 'Новости'
+    - name : 'Nouvelles'
       link : 'https://www.facebook.com/aerovis'
       target : '_blank'
 
-    - name : 'Контакты'
-      link : '/ru/contacts'
+    - name : 'Сontacts'
+      link : '/fr/contacts'
 
   slider: 
     - imgSrc : '/img/header/1.jpg'
       alt: 'An 12 Aerovis'
-      name: 'Выполнение экспресс-перевозок по всему миру'
+      name: 'l’exécution de transport express'
 
     - imgSrc : '/img/header/2.jpg'
-      name: 'Доставка грузов в отдаленные и труднодоступные районы'
       alt: 'An 12 Aerovis'
+      name: 'la livraison des marchandises dans des zones éloignées'
 
     - imgSrc : '/img/header/3.jpg'
-      name: 'Способность осуществлять полеты в сложных метеорологических условиях'
       alt: 'An 12 Aerovis'
+      name: 'Capacité de voler dans des conditions météorologiques difficiles'
 
     - imgSrc : '/img/header/4.jpg'
-      name: 'Оказание гуманитарной помощи и логистическая поддержка миротворческих миссий'
       alt: 'An 12 Aerovis'
+      name: 'le soutien logistique des missions de maintien de la paix'
 
   langSwich:
     - country : 'en'
@@ -70,9 +70,9 @@ header:
 
 about:
   title1:
-    - Аккредитация
+    - Accréditation
   title2:
-    - Наши партнеры
+    - Nos partenaires
 
   slider:
     - imgSrc : '/img/about/slider/1.jpg'
@@ -123,33 +123,37 @@ about:
       name : 'Chapman Freeborn'
 
   textAboutUs:
-    - text : 'АК Аэровиз основана в 2003 году, и в течении многих лет находилась в сегменте лидеров международных авиационных чартерных грузовых перевозок.'
-    - text : 'Cамое основное для нас, это: обеспечение безопасности, высокого качества, оперативности и надежности предоставляемых услуг с целью максимально полного удовлетворения запросов наших партнеров и клиентов.'
-    - text : 'Свою деятельность АК осуществляет на основании сертификата эксплуатанта UK 051, выданного Госавиаслужбой Украины.'
-    - text : 'Также АК прошла сертификацию и имеет право выполнять перевозки опасных грузов.'
-    - text : 'В настоящее время авиапарк АК АэроВиз состоит из пяти ВС типа Ан-12, отвечающих всем требованиям для осуществления полетов по международным воздушным линиям.'
-    - text : 'Техническая исправность и надежность наших самолетов обеспечивается высококвалифицированным инженерно-техническим составом нашей АК.'
-    - text : 'В  феврале 2017 мы успешно прошли проверку на соответствие стандартам эксплуатационной безопасности Европейским агентством по авиационной безопасности (EASA).'
-    - text : 'На сегодняшний момент мы предоставляем услуги в Европе, Африке, Азии, Южной Америке, Ближнем Востоке.'
-    - text : 'АК аккредитована в следующих организациях:'
-    - text : '- Международный комитет красного креста (ICRC);'
-    - text : '- Организация Североатлантического договора (NATO) Агентство поддержки закупок;'
-    - text : '- Всемирная Продовольственная Программа (WFP).'
-    - text : 'Широкий спектр транспортных услуг обеспечивается техническими возможностями самолетов Ан-12 – изначально сконструированных для военно-транспортной авиации, такими как:'
-    - text : '- возможностью производить полеты на грунтовые и другие неподготовленные полосы;'
-    - text : '- наличием облегчающих погрузку/выгрузку широкой задней рампы и автономного погрузочного оборудования ( кранбалка и грузовых лебедок);'
-    - text : '- способностью осуществлять полеты в сложных метеорологических условиях.'
-    - text : 'Благодаря своим техническим характеристикам и летным качествам наши самолеты широко востребованы как оптимальный транспорт для:'
-    - text : '- доставки грузов в отдаленные и труднодоступные районы, не имеющие необходимой авиационной инфраструктуры;'
-    - text : '- оказания гуманитарной помощи (перевозка пищевых продуктов и промышленных товаров);'
-    - text : '- перевозки негабаритных грузов с целью поддержки эксплуатации газовых/нефтяных месторождений, автомобилестроения, тяжелой промышленности и т.д.'
-    - text : '- осуществления экспресс-перевозок, в том числе, совместно с всемирно известными логистическими компаниями;'
-    - text : '- логистической поддержки миротворческих миссий;'
-    - text : '- обеспечения арктических экспедиций;'
-    - text : '- осуществления трансатлантических перевозок;'
-    - text : 'Отличительная особенность АК АэроВиз состоит в том, что она также является организацией по техническому обслуживанию и поддержанию летной годности (OPS1,Part-145, Part M Sub-G).'
-    - text : 'Мы высоко ценим каждого нашего клиента и прикладываем максимум усилий с целью удовлетворения их запросов.'
-    - text : 'Компания постоянно совершенствуется и движется к реализации новых возможностей и перспектив, как для себя, так и для своих партнеров и клиентов.'
+    - text : 'Aeroviz a été fondée en 2003. Depuis de nombreuses années nous sommes un des leaders sur le marché du transport international aérien de la marchandise. Afin de maximiser la pleine satisfaction des besoins de nos partenaires et des clients nous respectons nos valeurs fondamentaux:'
+    - text : '✓ la sécurité,'
+    - text : '✓ la qualité irréprochable,'
+    - text : '✓ l’excellence operationnelle,'
+    - text : "✓ l'efficacité et"
+    - text : '✓ la fiabilité.'
+
+    - text : "Nos activités sont réalisées sur la base du certificat de l'opérateur UK 051, délivré par le Service d'aviation d'état de l'Ukraine. En plus de ce certificat nous étions certifiés et disposons des droits de transporter les marchandises dangereuses."
+    - text : 'Actuellement la flotte aérienne d’AK Aeroviz est composé de cinq avions AN-12 répondant à toutes les exigences pour les vols internationaux.'
+    - text : 'Le service technique et la fiabilité de nos avions sont assurés par notre personnel technique hautement qualifié de notre compagnie.'
+    - text : "En février 2017 nous avons passé avec succès le test de conformité aux normes de sécurité opérationnelle de l'Agence européenne de la sécurité aérienne (AESA)."
+    - text : 'À ce jour, nous fournissons des services en Europe, en Afrique, en Asie, en Amérique du Sud et au Moyen-Orient.'
+    - text : 'AK est accrédité dans les organisations suivantes:'
+    - text : '1. Comité international de la Croix-Rouge (CICR),'
+    - text : "2. Agence des achats de l'OTAN,"
+    - text : '3. Programme alimentaire mondial (PAM).'
+    - text : "Une large gamme de services de transport est assuré par les capacités techniques de l'avion AN-12 – conçu à l'origine pour l'aviation de transport militaire. Nous soulignons ses particularités suivantes:"
+    - text : "➢ la capacité d’effectuer les atterrissages au sol et sur d'autres bandes non préparées,"
+    - text : "➢ existence d'une large rampe arrière facilitant le chargement / déchargement et l'équipement de chargement autonome (grue et treuils de fret),"
+    - text : '➢ capacité de voler dans des conditions météorologiques difficiles.'
+    - text : 'Grâce à ces caractéristiques techniques et ses performances, nos avions sont très demandés comme un moyen de transport optimal pour:'
+    - text : "1. la livraison des marchandises dans des zones éloignées et inaccessibles qui ne disposent pas d'infrastructure aéroportuaire nécessaire,"
+    - text : "2. le transport d'aide humanitaire (transport de produits alimentaires et de produits industriels),"
+    - text : "3. le transport de marchandises surdimensionnées afin de soutenir l'exploitation des champs gaziers / pétroliers, de l'industrie automobile, de l'industrie lourde, etc."
+    - text : '4. l’exécution de transport express, y compris, en collaboration avec des entreprises de logistique de renommée mondiale,'
+    - text : '5. le soutien logistique des missions de maintien de la paix,'
+    - text : '6. l’approvisionnement des expéditions arctiques,'
+    - text : '7. la navigation transatlantique.'
+    - text : "La particularité d'AK Aeroviz est que nous disposons également d’une organisation pour la maintenance technique du parc des avions (OPS1, Part-145, Part M Sub-G)."
+    - text : "Nous apprécions beaucoup chaque client et nous mettons un maximum d'efforts pour satisfaire leurs demandes."
+    - text : "L'entreprise ne cesse de s'améliorer et de s'orienter vers la réalisation de nouvelles opportunités et perspectives tant pour nous-même que pour nos partenaires et clients."
 
 certificates:
   - src : '/img/about/certificate-1.jpg'
@@ -172,15 +176,15 @@ charterFligts:
     - src : '/img/charter-fligts/scheme-sm.jpg'
       href : '/img/charter-fligts/scheme-sm.jpg'
       alt: 'Scheme An 12'
-      text : 'Сантиметры'
+      text : 'Centimètres'
 
     - src : '/img/charter-fligts/scheme-in.jpg'
       href : '/img/charter-fligts/scheme-in.jpg'
       alt: 'Scheme An 12'
-      text : 'Дюймы'
+      text : 'Pouces'
 
   titleTable:
-    - 'Тактико-технические данные самолета'
+    - "Données techniques de l'avion"
 
   tableContent: 
     - text1 : 'Empty weight'
@@ -224,20 +228,20 @@ charterFligts:
       text3 : '2,400 kg/h'
 
   form:
-    noticeMsgSuccess: 'Сообщение отправлено. Копия сообщения будет отправлена на Ваш E-mail.'
-    noticeMsgError: 'Сообщение не отправлено.'
-    noticeMsgHelp: 'Сообщение не отправлено. Заполните все поля.'
-    name_user: '*Введите имя'
-    mail: '*Введите E-mail'
-    titleSelectContry: '*Выберете регион'
-    titleAirport: 'Аэродром'
-    cargo: 'Груз*'
-    weight: 'Вес (КГ)*'
-    date: 'Дата вылета*'
-    message: 'Введите сообщение'
-    btnSend: 'Заказать чартер'
-    ofText: 'Из'
-    inText: 'В'
+    noticeMsgSuccess: 'Votre message a été envoyé. Une copie du message sera envoyée à votre E-mail.'
+    noticeMsgError: 'Message non envoyé.'
+    noticeMsgHelp: 'Message non envoyé. Remplissez tous les champs.'
+    name_user: '*Votre nom'
+    mail: '*Votre E-mail'
+    titleSelectContry: '*Choisissez une région'
+    titleAirport: 'Aérodrome'
+    cargo: 'Cargo*'
+    weight: 'Poids (kg)*'
+    date: 'Date de départ*'
+    message: 'Votre message'
+    btnSend: 'Commander une charte'
+    fromText: "D'où"
+    toText: 'Où'
 
   loadingPhoto :
     - src : '/img/charter-fligts/1.jpg'
@@ -390,16 +394,16 @@ contacts:
   contactsBox:
     mapSrc: 'https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d2540.207641395974!2d30.374764315731593!3d50.455857979476164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x40d4cc8c0279b9ef%3A0x7bd5e71053a6ea0!2z0L_RgNC-0YHQv9C10LrRgiDQn9C10YDQtdC80L7Qs9C4LCAxMDUsINCa0LjRl9Cy!3m2!1d50.455858!2d30.376953!5e0!3m2!1sru!2sua!4v1491782358669'
     
-    title_1: 'Главный офис:'
-    name_1: 'Адрес:'
-    value_1: '03115, Украина, Киев, проспект Победы 105, офис 2'
+    title_1: 'Siège social:'
+    name_1: 'Adresse:'
+    value_1: '03115, Ukraina, Kiyev, prospekt Pobedy 105, ofis 2'
 
     phones:
-      - name: 'Тел:'
+      - name: 'Tél:'
         href: 'tel:+380444249852'
         value: '+380 44 424 98 52'
 
-      - name: 'Факс:'
+      - name: 'Fax:'
         href: 'tel:+380444249856'
         value: '+380 44 424 98 56'
 
@@ -426,18 +430,18 @@ contacts:
       href: 'mailto:commercial@aerovis.aero'
 
   form:
-    noticeMsgSuccess: 'Сообщение отправлено. Копия сообщения будет отправлена на Ваш E-mail.'
-    noticeMsgError: 'Сообщение не отправлено.'
-    noticeMsgHelp: 'Сообщение не отправлено. Заполните все поля.'
-    name_user: 'Введите имя'
-    mail: 'Введите E-mail'
-    message: 'Введите сообщение'
-    btnSend: 'Отправить'
+    noticeMsgSuccess: 'Votre message a été envoyé. Une copie du message sera envoyée à votre E-mail.'
+    noticeMsgError: 'Message non envoyé.'
+    noticeMsgHelp: 'Message non envoyé. Remplissez tous les champs.'
+    name_user: '*Votre nom'
+    mail: '*Votre E-mail'
+    message: 'Votre message'
+    btnSend: 'Envoyer'
 
 footer:
   col_1:
-    name: 'Адрес:'
-    value: '03115, Украина, Киев, проспект Победы 105, офис 2'
+    name: 'Adresse:'
+    value: '03115, Ukraina, Kiyev, prospekt Pobedy 105, ofis 2'
     contacts:
       - link: 'https://mail.aerovis.aero'
         icon: 'glyphicon glyphicon-envelope'
@@ -455,7 +459,7 @@ footer:
         icon: 'fa fa-whatsapp'
 
   col_2:
-    title: 'Сертификаты компании:'
+    title: 'Certificats:'
     cert:
       - name: 'AOC OPS1:'
         link: '/img/about/certificate-1.jpg'
@@ -473,7 +477,7 @@ footer:
         alt: 'Certificate UA.MG.0094'
 
   col_3:
-    title: 'Контакты:'
+    title: 'Contacts:'
     contacts:
       - name: 'Tel:'
         link: 'tel:+380444249852'

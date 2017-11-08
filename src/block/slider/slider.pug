@@ -2,7 +2,10 @@ mixin b-slider(items, classes)
 	+b.UL.slider(class=classes)
 		each item in items
 			+e.LI.item
+				if item.name
+					+e.text-box
+						+e.text-2= item.name
 				if item.imgSrc
-					+e.IMG(src=item.imgSrc).img
+					+e.IMG(src=item.imgSrc alt=item.alt).img
 				if item.videoSrc
 					+e.IFRAME(src=item.videoSrc, allowfullscreen).video

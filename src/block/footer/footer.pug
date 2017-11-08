@@ -8,10 +8,9 @@ mixin b-footer()
 					+e.item_name= footer.col_1.name
 					+e.item_value= footer.col_1.value
 				+e.item_3
-					+e.A(href= footer.col_1.link_1).link_docs
-						SPAN.glyphicon.glyphicon-envelope
-					+e.A(href= footer.col_1.link_2).link_mail
-						SPAN.glyphicon.glyphicon-cloud-download
+					each item in footer.col_1.contacts
+						+e.A(href= item.link, target="_blank").link_docs
+							SPAN(class= item.icon)
 
 			+b(class="column _2")
 				+e.title= footer.col_2.title
@@ -30,10 +29,6 @@ mixin b-footer()
 							+e.item_name= item.name
 							+e.item_value 
 								+e.A.link(href= item.link)= item.value
-					else
-						+e.item
-							+e.item_name= item.name
-							+e.item_value= item.value
 
 			+b(class="column _4")
 				+e.title= footer.col_4.title

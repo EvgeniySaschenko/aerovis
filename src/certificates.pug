@@ -1,0 +1,10 @@
+extends layouts/root
+
+block title 
+	title= general.certificates.title
+
+block main
+	+b.certificates
+		+b.title-page= general.certificates.name
+		.container
+			+b-gallery(certificates, '_certificate')

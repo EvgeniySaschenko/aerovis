@@ -8,14 +8,46 @@ mixin b-form-charter-fligts(items, listContry)
 		+e.input-wrap
 			+e.INPUT(name="mail", placeholder= items.mail, required="required").input_mail
 		+e.select-wrap
-			+e.title= items.titleSlectContry
-			+e.select_region
-				each item, i in listContry
-					.form-charter-fligts__select_region__item(data-name= item.name)
-						INPUT(type="hidden", value= item.name)
-						I.form-charter-fligts__select_region__icon(class="icon-flag icon-flag-" + item.alpha2)
-						SPAN.form-charter-fligts__select_region__name= item.name
+			+e.title= items.titleSelectContry
+			// Выбрать регион
+			.left-box
+				.region-title= items.fromText
+				+e.select_region
+					each item, i in listContry
+						.form-charter-fligts__select_region__item(data-name-of= item.name)
+							INPUT(type="hidden", value= item.name)
+							I.form-charter-fligts__select_region__icon(class="icon-flag icon-flag-" + item.alpha2)
+							SPAN.form-charter-fligts__select_region__name= item.name
+
+			.right-box
+				.region-title= items.toText
+				+e.select_region
+					each item, i in listContry
+						.form-charter-fligts__select_region__item(data-name-in= item.name)
+							INPUT(type="hidden", value= item.name)
+							I.form-charter-fligts__select_region__icon(class="icon-flag icon-flag-" + item.alpha2)
+							SPAN.form-charter-fligts__select_region__name= item.name
+			// Выбрать аеропорт
+			+e.title= items.titleAirport
+			.left-box
+				.airport-title= items.fromText
+				INPUT(name="airport_of")
+
+			.left-box
+				.airport-title= items.toText
+				INPUT(name="airport_in")
+
+		+e.input-wrap
+			+e.INPUT(name="cargo", placeholder= items.cargo, required="required").input_cargo
+
+		+e.input-wrap
+			+e.INPUT(name="weight", placeholder= items.weight, required="required").input_weight
+			
+		+e.input-wrap
+			+e.INPUT(name="date", placeholder= items.date, required="required").input_date
+
 		+e.textarea-wrap
-			+e.TEXTAREA(name="message", placeholder= items.message, required="required").textarea_message
+			+e.TEXTAREA(name="message", placeholder= items.message).textarea_message
+		.g-recaptcha(data-sitekey="6LcGEzcUAAAAAO7wgxRtwMR0I7LDekNmUdHuklPP")
 		+e.button-wrap
 			+e.BUTTON.button_send= items.btnSend

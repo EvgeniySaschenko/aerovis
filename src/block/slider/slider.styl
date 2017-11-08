@@ -27,8 +27,19 @@
 		.slider
 			&__item
 				width 100%
+				position relative
 			&__img
 				width 100%
+			&__text-box
+				width 100%
+				background rgba(0 0 0 .4)
+				position absolute
+				bottom 0
+				right 0
+				font-size 20px
+				padding 50px 0
+				color #fff
+				font-style italic
 		.slick-dots
 			bottom 15px
 			li button::before
@@ -41,29 +52,9 @@
 
 
 
-// @media tablet
-// 	.slider
-// 		&_about
-// 			max-width 600px
-// 			.slider
-// 				&__item
-// 					width 200px
-// 					height 100px
-// 					padding 0 10px
-					
-// @media phone
-// 	.slider
-// 		&_about
-// 			max-width 300px
-// 			.slider
-// 				&__item
-// 					width 300px
-// 					height 160px
-// 					padding 0
-// 	.slider
-// 		&_header
-// 			.flickity-prev-next-button
-// 				display none
-
-
-					
+@media phone
+	.slider
+		&_header
+			.slider
+				&__text-box
+					display none

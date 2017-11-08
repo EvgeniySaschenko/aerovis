@@ -6,5 +6,10 @@ mixin b-nav(items, classes)
 			+e.line
 		+e.UL.list
 			each item in items
+				if item.target
+					- target= '_blank'
+				else
+					- target= ''
+
 				+e.item
-					+e.link(href=item.link, data-page=item.link) #{item.name}
+					+e.link(href=item.link, data-page=item.link, target=target) #{item.name}

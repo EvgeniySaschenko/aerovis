@@ -3,5 +3,5 @@ mixin b-tile(items, classes)
 		each item in items
 			+e.item
 				+e.logo
-					+e.IMG(src=item.src).img
+					+e.IMG(src=item.src alt=item.alt).img
 				+e.name!=item.name 

@@ -13,7 +13,7 @@ const babel = require('gulp-babel');
 
 
 // Сервер - при изменениях файлов в заданных папках обновляет страницу в браузере
-gulp.task('serve', ['pug:ru', 'pug:en', 'stylus', 'coffee', 'copy', 'sprite'], () => {
+gulp.task('serve', ['pug:ru', 'pug:en', 'pug:de', 'pug:fr', 'pug:es', 'stylus', 'coffee', 'copy', 'sprite'], () => {
 	browserSync.init({
 			server: {
 				baseDir: "./build/"
@@ -23,8 +23,8 @@ gulp.task('serve', ['pug:ru', 'pug:en', 'stylus', 'coffee', 'copy', 'sprite'], (
 
 	gulp.watch('src/assets/', ['copy']);
 	gulp.watch('src/**/*.styl', ['stylus']);
-	gulp.watch('src/**/*.pug', ['pug:ru', 'pug:en']);
-	gulp.watch('src/data/*.yml', ['pug:ru', 'pug:en', 'stylus']);
+	gulp.watch('src/**/*.pug', ['pug:ru', 'pug:en', 'pug:de', 'pug:fr', 'pug:es']);
+	gulp.watch('src/data/*.yml', ['pug:ru', 'pug:en', 'pug:de', 'pug:fr', 'pug:es', 'stylus']);
 	gulp.watch('srs/assets/img/sprites/*.*', ['sprite']);
 	gulp.watch('src/**/*.coffee', ['coffee']);
 	gulp.watch('build/**/*.*').on('change', browserSync.reload);
@@ -52,6 +52,39 @@ gulp.task('pug:en', () => {
 	}))
 	.pipe(pug({pretty: true}))
 	.pipe(gulp.dest('build/en'));
+});
+
+gulp.task('pug:de', () => {
+	return gulp.src('src/*.pug')
+	.pipe(yamlData({
+			property: 'data',
+			src: ['src/data/de.data.yml', 'src/data/contry.yml'],
+			override: false 
+	}))
+	.pipe(pug({pretty: true}))
+	.pipe(gulp.dest('build/de'));
+});
+
+gulp.task('pug:fr', () => {
+	return gulp.src('src/*.pug')
+	.pipe(yamlData({
+			property: 'data',
+			src: ['src/data/fr.data.yml', 'src/data/contry.yml'],
+			override: false 
+	}))
+	.pipe(pug({pretty: true}))
+	.pipe(gulp.dest('build/fr'));
+});
+
+gulp.task('pug:es', () => {
+	return gulp.src('src/*.pug')
+	.pipe(yamlData({
+			property: 'data',
+			src: ['src/data/es.data.yml', 'src/data/contry.yml'],
+			override: false 
+	}))
+	.pipe(pug({pretty: true}))
+	.pipe(gulp.dest('build/es'));
 });
 
 // STYLUS

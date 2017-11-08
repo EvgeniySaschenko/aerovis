@@ -15,5 +15,6 @@ mixin b-form-contacts(items)
 
 		+e.textarea-wrap
 			+e.TEXTAREA(name="message", placeholder= items.message, required="required").textarea_message
+		.g-recaptcha(data-sitekey="6LcGEzcUAAAAAO7wgxRtwMR0I7LDekNmUdHuklPP")
 		+e.button-wrap
 			+e.BUTTON.button_send= items.btnSend
