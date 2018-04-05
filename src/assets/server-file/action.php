@@ -1,7 +1,7 @@
 <?php
 	if(($_GET['action'] == 'charter-fligts')){
 
-		$to= 'charter@aerovis.aero';
+		$to= 'evgeniy.saschenko@gmail.com';
 		$subject= 'Order charter - '.$_POST['name_user'].' - route '.$_POST['region_of'].' - '.$_POST['region_in'].' - date '.$_POST['date']; 
 		$message= "<b>Message:</b><br> ".$_POST['message']. "<br>".
 		"<b>Sender name:</b> ".$_POST['name_user']. "<br>".
@@ -22,7 +22,7 @@
 
 	if(($_GET['action'] == 'contacts')){
 		
-		$to= 'office@aerovis.aero';
+		$to= 'evgeniy.saschenko@gmail.com';
 		$subject= 'Contacts - '.$_POST['name_user']; 
 		$message= "<b>Message:</b><br> ".$_POST['message']. "<br>".
 		"<b>Sender name:</b> ".$_POST['name_user']. "<br>".
